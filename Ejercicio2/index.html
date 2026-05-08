@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistas Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        /* Todas las celdas del mismo tamaño */
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            width: 150px;  /* Mismo ancho para todas las celdas */
+        }
+        
+        th {
+            background-color: #3f51b5;  /* Azul morado elegante */
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla de Artistas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Artista</th>
+                <th>Álbumes</th>
+                <th>Grammys</th>
+                <th>Año</th>
+            </tr>
+        </thead>
+        <tbody id="tablaDatos">
+        </tbody>
+    </table>
+
+    <script src="Script.js"></script>
+    <script>
+        mostrarDatos();
+    </script>
+</body>
+</html>

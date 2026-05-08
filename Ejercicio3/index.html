@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Círculo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .interfaz {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="interfaz">
+        <h1>Calculadora de Área y Circunferencia de un Círculo</h1>
+        <label for="radio">Radio:</label>
+        <input type="number" id="radio" placeholder="Ingresa el radio">
+        <br><br>
+        <button onclick="calcularArea()">Calcular Área</button>
+        <button onclick="calcularCircunferencia()">Calcular Circunferencia</button>
+        <br><br>
+        <div id="area"></div>
+        <div id="circunferencia"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
