@@ -15,18 +15,22 @@
             width: 100%;
             max-width: 600px;
             background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave en la tabla */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+             /* Sombra suave para la tabla */
         }
+
         /* Todas las celdas del mismo tamaño */
         th, td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: center;
-            width: 150px;  /* Mismo ancho para todas las celdas */
+            width: 150px;
+            /* Mismo ancho para todas las celdas osea para que se vea igual xd*/
         }
         
         th {
-            background-color: #3f51b5;  /* Azul morado elegante */
+            background-color: #3f51b5;
+            /* Azul morado elegante */
             color: white;
         }
         tr:nth-child(even) {
@@ -45,7 +49,6 @@
                 <th>Año</th>
             </tr>
         </thead>
-        <!-- Aquí JavaScript insertará las filas dinámicamente -->
         <tbody id="tablaDatos">
         </tbody>
     </table>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Videojuegos</title>
+    <!-- Archivo de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,19 +12,20 @@
     <div class="carrusel">
         <h1> Galería de Videojuegos </h1>
 
+        <!-- Flecha izquierda para retroceder -->
         <div class="carrusel-contenedor">
             <button id="btnIzquierda" class="flecha izquierda">◀</button>
             
             <div class="imagen-contenedor">
                 <img id="imagenPrincipal" src="" alt="Videojuego">
             </div>
-            
+            <!-- Flecha derecha para avanzar -->
             <button id="btnDerecha" class="flecha derecha">▶</button>
         </div>
 
         <div class="dots" id="dotsContainer"></div>
     </div>
-
+    <!-- Archivo con la lógica -->
     <script src="script.js"></script>
 </body>
 </html>
