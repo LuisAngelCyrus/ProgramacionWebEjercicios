@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease; /* Hace que el cambio de color sea suave */
         }
         button {
             padding: 10px 20px;
@@ -24,13 +24,14 @@
             border-radius: 5px;
         }
         button:hover {
-            background-color: #455a64;
+            background-color: #455a64; /* El botón se oscurece cuando el mouse pasa encima */
         }
     </style>
 </head>
 <body>
     <div style="text-align: center;">
         <div>Seleccione Un Color</div>
+        <!-- Al hacer clic, ejecuta la función pintar() que está en script.js -->
         <button onclick="pintar()">Cambiar Color</button>
     </div>
     <script src="script.js"></script>

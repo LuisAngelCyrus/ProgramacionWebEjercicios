@@ -15,7 +15,7 @@
             width: 100%;
             max-width: 600px;
             background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Sombra suave en la tabla */
         }
         /* Todas las celdas del mismo tamaño */
         th, td {
@@ -45,13 +45,14 @@
                 <th>Año</th>
             </tr>
         </thead>
+        <!-- Aquí JavaScript insertará las filas dinámicamente -->
         <tbody id="tablaDatos">
         </tbody>
     </table>
 
     <script src="Script.js"></script>
     <script>
-        mostrarDatos();
+        mostrarDatos(); // Ejecuta la función al cargar la página
     </script>
 </body>
 </html>

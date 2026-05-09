@@ -17,8 +17,8 @@
         .interfaz {
             background: white;
             padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra suave */
             text-align: center;
         }
     </style>
@@ -27,11 +27,14 @@
     <div class="interfaz">
         <h1>Calculadora de Área y Circunferencia de un Círculo</h1>
         <label for="radio">Radio:</label>
+        <!-- Campo para ingresar el radio, solo números -->
         <input type="number" id="radio" placeholder="Ingresa el radio">
         <br><br>
+        <!-- Botones que ejecutan las funciones al hacer clic -->
         <button onclick="calcularArea()">Calcular Área</button>
         <button onclick="calcularCircunferencia()">Calcular Circunferencia</button>
         <br><br>
+        <!-- Contenedores donde se mostrarán los resultados -->
         <div id="area"></div>
         <div id="circunferencia"></div>
     </div>

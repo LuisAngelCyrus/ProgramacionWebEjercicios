@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculadora de Interés</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Coppel Xd-->
 </head>
 <body>
+      <!-- Cuerpo del programa-->
+    <div class="contenedor">
+        <h1> Calculadora de Interés</h1>
+        <div class="campos">
+            <label>Monto inicial ($):</label>
+            <input type="number" id="monto" placeholder="Ejemplo: 1000">
+            
+            <label>Cantidad de meses:</label>
+            <input type="number" id="meses" placeholder="Ejemplo: 6" value="1">
+            
+            <button id="btnCalcular">Calcular</button>
+        </div>
+        
+        <div id="resultados" class="resultados"></div>
+    </div>
     
-
-    <h2>Digite una cantidad de dinero</h2>
-    <input type="text" id = "inputdinero">
-    <button id="aceptar">calcular</button>
-
-
-    <h2>Resultado: </h2>
-
-    <p id="resultado15"></p>
-      <p id="resultado13.5"></p>
-        <p id="resultado9"></p>
-    
-    <script src="Script.js" async defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
