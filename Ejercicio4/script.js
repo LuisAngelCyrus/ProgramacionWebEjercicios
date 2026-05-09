@@ -1,4 +1,4 @@
-// Lista de imágenes (tú descargarás las imágenes)
+// Lista de imágenes
 const images = [
     "img/juego1.jpg",
     "img/juego2.jpg",
@@ -13,15 +13,15 @@ const dotsContainer = document.getElementById("dotsContainer");
 const btnIzquierda = document.getElementById("btnIzquierda");
 const btnDerecha = document.getElementById("btnDerecha");
 
-let indiceActual = 0;  // Qué imagen estamos viendo
+let indiceActual = 0;  // Qué imagen estamos viendo XD
 
-// 1. Mostrar la imagen actual
+//  Mostrar la imagen actual
 function mostrarImagen() {
     imagenPrincipal.src = images[indiceActual];
     actualizarBolitas();
 }
 
-// 2. Crear y actualizar las bolitas
+//  Crear y actualizar las bolitas
 function actualizarBolitas() {
     dotsContainer.innerHTML = "";
     
@@ -42,7 +42,7 @@ function actualizarBolitas() {
     }
 }
 
-// 3. Flecha derecha (siguiente imagen)
+// Flecha derecha siguiente imagen
 btnDerecha.addEventListener("click", () => {
     if (indiceActual < images.length - 1) {
         indiceActual++;
@@ -52,7 +52,7 @@ btnDerecha.addEventListener("click", () => {
     mostrarImagen();
 });
 
-// 4. Flecha izquierda (imagen anterior)
+//  Flecha izquierda (imagen anterior)
 btnIzquierda.addEventListener("click", () => {
     if (indiceActual > 0) {
         indiceActual--;
@@ -62,5 +62,5 @@ btnIzquierda.addEventListener("click", () => {
     mostrarImagen();
 });
 
-// 5. Iniciar con la primera imagen
+// Por ultimo iniciar con la primera imagen
 mostrarImagen();
